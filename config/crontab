@@ -1,2 +1,2 @@
-4 2 * * * runuser sc-wg++ -c "/home/sc-wg++/wg++/run.sh" >> /var/log/cron.log 2>&1
+4 10,22    * * *   root	runuser sc-wg++ -c "/home/sc-wg++/wg++/run.sh" >> /var/log/cron.log 2>&1;
 # Don't remove the empty line at the end of this file. It is required to run the cron job
