@@ -69,7 +69,7 @@ RUN \
   mv /tmp/WebGrab++.config.xml /${APP_PATH}/ && \
   echo "**** create symolic link to /siteini.user ****" && \
   rm ${APP_PATH}/siteini.user && \
-  ln -s ${APP_PATH}/siteini.user /siteini.user
+  ln -s ${APP_PATH}/siteini.user /siteini.user && \
   echo "**** change owner of path****" && \
   chown -R ${USR}:${GROUP} ${APP_PATH} && \
   echo "**** set crontab file permissions and create a log file ****" && \
