@@ -7,7 +7,7 @@ TODO: add logo
 
 [JP-L][jplorgurl] created a WebGrabPlus container.
 
-Latest release: 0.1 - docker-tvwebgrabplus - [Changelog](CHANGELOG.md)
+Latest release: 0.1 - docker-webgrab-plus - [Changelog](CHANGELOG.md)
 # jplorg/webgrabplus
 [![](https://images.microbadger.com/badges/version/jplorg/webgrabplus.svg)](https://microbadger.com/images/jplorg/webgrabplus "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/jplorg/webgrabplus.svg)](https://microbadger.com/images/jplorg/webgrabplus "Get your own image badge on microbadger.com")
@@ -15,6 +15,7 @@ Latest release: 0.1 - docker-tvwebgrabplus - [Changelog](CHANGELOG.md)
 TODO: Add shippable and code quality status
 
 [![webgrabplus]][appurl]
+
 WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.
 
 ## Quick Start
