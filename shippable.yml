@@ -1,0 +1,93 @@
+# Language setting
+language: none
+
+# Set language version. This is only required if you use the default Shippable image for your build
+#jdk:
+#  - oraclejdk8
+
+# Specify which services you need. This is only valid if you use the default Shippable image for your build
+#services:
+
+env:
+   - secure: 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
+
+#matrix:
+
+# The build configuration
+build:
+  # commands in this section run on your build machine and not inside your CI container.
+  pre_ci:
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    #- aws ecr get-login --region eu-west-1
+    - echo "this is master branch"
+    
+  pre_ci_boot:
+    image_name: 791079558361.dkr.ecr.eu-west-1.amazonaws.com/jpl/u16jav
+    image_tag: '1.0'
+    pull: true
+    options: '--privileged=false --net=bridge -e FOO=true -e BOO=false'
+
+  # commands in this section run inside your CI container. In addition, any commands such as ls, 
+  # in this section can be used to skip default processing for CI.
+  ci:
+    #- aws ecr get-login --region eu-west-1 | grep -oP '\-p\ .\S*'
+    - echo "============ Prepare envrionment ============="
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - mkdir -p $HOME/.gradle; printenv | grep GRADLE_PROP | cut -d'=' -f 2- >> $HOME/.gradle/gradle.properties
+    - echo "============ Building the Docker image ============="
+    - gradle buildDockerFile
+
+  post_ci:
+    - echo "=== Tag and push the Docker image to the test repository ==="
+    #- gradle pushDockerImage
+    #- docker push 791079558361.dkr.ecr.eu-west-1.amazonaws.com/jpl/demo-application:1.1
+  
+  on_success:
+    - bash <(curl -s https://codecov.io/bash) -f shippable/codecoverage/coverage.xml
+    - echo "Build succeeded"
+    
+  on_failure:
+    - echo "Build failed"
+    
+  cache: false
+  
+  # Commands in this section run on your build machine and not inside your CI container.
+  #push:
+  #  - echo "TODO: skip push -> (Artifactory through Gradle I presume)"
+  #  - echo "TODO: Or perhaps use this for deployment (what about pipeline?)"
+
+integrations:
+# If you are using integrations, you'll need to set it up in two places. Subscription settings & here in this section of the yml.
+#    notifications:
+#        - integrationName:
+#          type:
+#          recipients:
+#          branches:
+#          on_start:
+#          on_success
+#          on_failure:
+#          on_changed:   
+    notifications:
+        - integrationName: Slack
+          type: slack
+          recipients:
+            - "#docker-webgrab-plus"
+          branches:
+            only:
+                - master
+                - dev
+          on_success: always
+          on_failure: always
+          on_pull_request: always
+          on_start: always
+
+    hub:
+        - integrationName: AWS-ECR
+          type: ecr
+          region: eu-west-1
+#          agent_only:
+#          branches:
+         
+         
